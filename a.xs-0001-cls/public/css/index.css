@@ -1,0 +1,228 @@
+/*主体 开始*/
+body{ 
+  /* background:#f3f3f3; */
+  font-size:16px;
+  background:url('../imgs/common/body_repeat.png') repeat 0px 200px;
+  background-size:20px 1000px; 
+}
+#main{
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+/* 主体 结束*/
+/* 头 开始*/
+#header{
+  width:95%;
+  height:500px;
+  margin:0 auto;
+  overflow: hidden;
+}
+
+/*用户登录*/
+#header .headlogin{
+  width:100%;
+  height:50px;
+  /* background:#cdd;
+  border-radius:5px; */
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  box-sizing: border-box;
+  border-bottom:1px dotted #fff;
+}
+
+/* 右侧 登录注册*/
+#header .headlogin .loginlist{
+  display: flex;
+}
+/* 登录注册链接 */
+#header .headlogin .loginlist .loginlink{
+  width:120px;
+  height:20px;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+#header .headlogin .loginlist .loginlink a{
+  color:#000;
+  margin:0px 10px 0px;
+}
+#header .headlogin .loginlist .loginlink a:hover{
+  color:#333;
+  box-sizing: border-box;
+  border-bottom: 1px solid #333;
+}
+/* 登录成功后 */
+#header .headlogin .loginlist .loginsuc{
+  width:120px;
+  height:20px;
+  color: #000;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+#header .headlogin .loginlist .loginsuc #loginheadImg{
+  width: 14px;
+  height:14px;
+  margin-right:5px;
+  border-radius: 50%;
+}
+#header .headlogin .loginlist .loginsuc:hover{
+  color:#333;
+  cursor: pointer;
+}
+
+/* 设置 */
+#header .headlogin .loginlist .loginchange{
+  width: 100px;
+  height:20px;
+  display: inline-block;
+}
+#header .headlogin .loginlist .loginchange .changeImg{
+  width: 20px;
+  height: 20px;
+}
+#header .headlogin .loginlist .loginchange .changeImg:hover{
+  transform: rotate(180deg);
+  transition: 0.5s linear;
+}
+/* 下拉 */
+#header .headlogin .loginlist .loginchange .changeImg-menu{
+  width:100px;
+  margin-top:12px;
+  box-shadow:0px 1px 2px #000;
+  /*display:none;*/
+  height:0px;
+  overflow: hidden;
+  transition: all .5s linear;
+}
+.changeImg-menu li{
+  width:100px;
+  height:20px;
+  background: #fff;
+  padding:8px 15px;
+}
+.changeImg-menu li a{
+  color:#000;
+}
+.changeImg-menu li:hover{
+  background:#ddd
+}
+
+/* 头部用户信息 */
+#header .headuser{
+  width:100%;
+  height:400px;
+  overflow: hidden;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items: center;
+}
+#header .headuser{
+  background: url('../imgs/common/bgcom.jpg') no-repeat center bottom;
+  background-size:900px 500px; 
+  border-radius:5px;
+}
+/* 用户头像 */
+#header .headuser .userhead{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+#header .headuser .userhead:hover{
+  cursor: pointer;
+  box-shadow:0px 0px 6px 0px #fff;
+}/* 头像 */
+#header .headuser .userhead #headImg{
+  width:100px;
+  height:100px;
+  overflow: hidden;
+  border-radius: 50%;
+}/* 性别 */
+#header .headuser .userhead #headsex{
+  width:30px;
+  height:30px;
+  overflow:hidden;
+  position:absolute;
+  right:0px;
+  bottom:0px;
+}
+
+/* 昵称 */
+#header .headuser .usernickname{
+  margin-top:8px;
+  padding:2px;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items: center;
+}/*会员图片*/
+#header .headuser .usernickname a img{
+  width:20px;
+  height:20px;
+  margin-left:6px;
+  display: flex;
+}
+
+/* 地址  简介 */
+#header .headuser .useraddress,.userbrief{
+  margin-top:6px;
+  padding: 2px;
+}
+
+/* 导航头 */
+#header .headbar{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items: center;
+}
+#header .headbar .navbar li{
+  padding:14px 50px;
+}
+#header .headbar .navbar li a{
+  color:#000;
+}
+#header .headbar .navbar li a:hover{
+  color: #333;
+}
+/* 头 结束 */
+/* 内容 开始*/
+/* #content{
+  width:90%;
+  height:2000px;
+  margin:0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  border:1px solid red;
+} */
+/* 脚 开始*/
+#footer{
+  width:100%;
+  height:50px;
+  margin:0 auto;
+  overflow: hidden;
+  /* 
+  background: #aadaef; 
+  box-sizing: border-box;
+  border-top:1px dashed #aaa;
+  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer .footcopy{
+  width:1400px;
+  height:50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 脚 结束*/

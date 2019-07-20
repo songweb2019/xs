@@ -1,0 +1,263 @@
+body{ 
+  font-size:16px;
+  background:url('../imgs/common/bglogin.jpg') no-repeat;
+  background-size: 100% 1100px;
+  overflow: hidden;
+}
+
+/* 登录按钮 */
+#logbox{
+  width:100%;
+  height:50px;
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius:2px;
+  color:#ccc;
+  background: #222;
+  transition:all .5s linear; 
+}
+#logbox:hover{
+  color:#fff; 
+  background:#4fa1c9;
+  transition:all .5s linear; 
+}
+.logspan{
+  position: absolute;
+  left:10px;
+}
+#logbox span a{
+  color:#ccc;
+  font-size: 14px;
+}
+
+/* 登录 注册 弹框*/
+/* 弹出 */
+#log .alert{
+  background:#fee;
+  padding:10px;
+  box-shadow: 0 2px 13px #4C4C4C;
+  position:fixed;
+  overflow: hidden;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  z-index:1;
+}
+/* 关闭 */
+#log .alert>.close{
+  font-weight:bold;
+  opacity:5;
+  cursor:pointer;
+}
+#log .alert>.close:hover{
+  opacity:1;
+  color:#f00;
+  transform: rotateX(360deg);
+  transition: 1s;
+}
+/* 弹出前 */
+#log .fade{ /*定义淡入淡出动画的初始状态,常驻元素  fade 消散 */
+  width: 600px;
+  height:400px;
+  /* display: none; */
+  /*先把左上角定位到浏览器窗口的中心*/
+  top:50%;
+  left:50%;
+  /* 向左拉回宽的一半 */
+  margin-left:-310px;
+  /* 向右拉回高的一半 */
+  margin-top:-200px;		
+  overflow: hidden;
+  transition:all .5s linear;
+  opacity:0;
+}
+/* 弹出后 */
+#log .in{ /*定义淡入淡出动画的结束状态*/
+  /* display: block; */
+  width: 600px;
+  height:400px;
+  margin-left:-310px;
+  margin-top: -200px;
+  opacity: 1;
+}
+
+/* 登录框 */
+#log .alert .loginput{
+  width:400px;
+  height:400px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:center;
+}
+
+/* 顶部标题 */
+.loginputtab li:nth-child(2){
+  margin:23px 10px;
+  font-size: 25px;
+  font-weight:lighter;
+}
+.logh2{
+  color: #777;
+  margin:23px 0px;
+  cursor: pointer;
+}
+.logh2:hover{
+  color: #333;
+}
+
+/* 手机号登录 | 账号密码登录*/
+.phonelog,.numberlog{
+  width:300px;
+  height:250px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:center;
+}
+/* 手机号 */
+.phoned1,.numberd1,.phoned2,.numberd2{
+  position: relative;
+}
+.phoned1,.numberd2{
+  margin:20px 0px;
+}
+.phoned2{
+  margin:0px 0px 20px 0px;
+}
+.numberd1{
+  margin-top:20px;
+}
+/* 手机图片 */
+.phoned1 span,.numberd1 span{
+  width:40px;
+  height:40px;
+  position: absolute;
+  left:0; 
+}
+.phoned1 span{
+  background: url('../imgs/login/phone.png') no-repeat 2px 2px;
+  background-size:40px auto;
+}
+.numberd1 span{
+  background: url('../imgs/login/myuname.png') no-repeat 10px 6px;
+  background-size:30px auto;
+}
+/* 输入手机号 输入账号*/
+input.myphone,input.myuname,input.myupwd{
+  width:250px;
+  height:40px;
+  font-size: 18px;
+  text-indent: 40px;  
+}
+/* 短信验证码 */
+input.myyzm{
+  width:150px;
+  height:40px;
+  font-size: 18px;
+  text-indent:40px;
+}
+/* 验证码图片 */
+.phoned2 span,.numberd2 span{
+  width:40px;
+  height:40px;
+  position: absolute;
+  left:0;
+  background: url('../imgs/login/phonemail.png') no-repeat 10px 6px;
+  background-size:28px auto; 
+}
+/* 获取验证码 */
+input.myhqyzm{
+  width:100px;
+  height:40px;
+}
+/* 验证信息 */
+.phonespan{
+  margin-top:15px;
+  width: 250px;
+  height:40px;
+  display: block;
+  text-indent: 20px;
+  align-items:center;
+}
+/* 自动登录 */
+.numberd3{
+  width:250px;
+  height:25px;
+  text-indent: 20px;
+}
+/* 登录按钮 */
+.loginon{
+  width:300px;
+  height:50px;
+  font-size:18px;
+  border:0;
+  color: #fff;
+  cursor: pointer;
+  background:#169eff;
+  border-radius: 5px;
+}
+.loginon:hover{
+  background:#168ef4;
+}
+
+/* 其他登录 */
+.atherlog{
+  width:200px;
+  height:400px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:center;
+}
+.atherlog li{
+  width: 200px;
+  height: 80px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.atherlog li a{
+  padding:20px;
+  color:#777;
+}
+.atherlog li:nth-child(2) a:hover{
+  color:#1ffa2d;
+}
+.atherlog li:nth-child(3) a:hover{
+  color:#eb6665;
+}
+.atherlog li:nth-child(4) a:hover{
+  color:#168ef4;
+}
+.atherlog li:nth-child(2){
+  background:url('../imgs/login/wx1.png') no-repeat 25px center;
+  background-size: 35px auto;
+}
+.atherlog li:nth-child(2):hover{
+  background:url('../imgs/login/wx2.png') no-repeat 25px center;
+}
+.atherlog li:nth-child(3){
+  background:url('../imgs/login/wb1.png') no-repeat 25px center;
+  background-size: 35px auto;
+}
+.atherlog li:nth-child(3):hover{
+  background:url('../imgs/login/wb2.png') no-repeat 25px center;
+}
+.atherlog li:nth-child(4){
+  background:url('../imgs/login/qq1.png') no-repeat 25px center;
+  background-size: 35px auto;
+}
+.atherlog li:nth-child(4):hover{
+  background:url('../imgs/login/qq2.png') no-repeat 25px center;
+}
+
+
+/* 注册 */
+.hide{ 
+  display: none; 
+}

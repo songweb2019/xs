@@ -1,0 +1,10 @@
+/* 通用 开始*/
+*{margin:0;padding:0;}
+a{text-decoration: none;}
+li{list-style: none;float:left;}
+input{outline: none;}
+.f12px{font-size:12px;}
+.f14px{font-size:14px;}
+.f18px{font-size:18px;}
+.f20px{font:20px 华文行楷;color:#333;}
+/*通用 结束*/
